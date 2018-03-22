@@ -87,3 +87,77 @@ let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (var i = 0; i < ninjaTurtles.length; i++) {
   console.log(ninjaTurtles[i].toUpperCase());
 }
+
+
+// Return of the Closets
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+
+// Alien Attire
+// Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+
+
+delete kristynsCloset[0];
+console.log(kristynsCloset[0]);
+
+const kristynsShoe = "left shoe";
+
+thomsCloset[2].push(kristynsShoe);
+
+console.log(thomsCloset[2][3]);
+
+
+// Dress Us Up
+// Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+
+const outfitOne = [thomsCloset[1][0],
+thomsCloset[0][1],
+thomsCloset[2][2]
+]
+
+const outfitTwo = [thomsCloset[1][1],
+thomsCloset[0][2],
+thomsCloset[2][0]
+]
+
+const outfitThree = [thomsCloset[1][2],
+thomsCloset[0][1],
+thomsCloset[2][0]
+]
+
+
+console.log("Outfit One for Thom is " + outfitOne.toString());
+console.log("Outfit Two for Thom is " + outfitTwo.toString());
+console.log("Outfit Three for Thom is " + outfitThree.toString());
