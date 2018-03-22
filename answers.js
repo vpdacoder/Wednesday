@@ -51,3 +51,30 @@ for (var i = 0; i <= 100; i++) {
     console.log(i);
   }
   }
+
+// Question 5
+
+const thom = ["Thom", 1000, "Christchurch"]
+const karolin = ["Karolin", 16, "New York"]
+const kristyn = ["Kristyn", 5, "Pittsburgh"]
+const matt = ["Matt H", 186, "Philadelphia"]
+
+// Matt H. decides that Thom. can't be named "Thom" anymore. Remove "Thom" from the thom array and replace it with "Gameboy".
+
+thom[0] = "Gameboy";
+
+console.log(thom[0]);
+
+// Karolin just had her birthday; change Karolin's array to reflect her being a year older.
+
+karolin[1] = 17;
+console.log(karolin[1]);
+
+// Change Matt H's hometown from Philadelphia to "Gotham City".
+
+matt[2] = "Gotham City";
+console.log(matt[2]);
+
+// Remove "Pittsburgh" from Kristyn's array and add "Brooklyn".
+kristyn[2] = "Brooklyn";
+console.log(kristyn[2]);
