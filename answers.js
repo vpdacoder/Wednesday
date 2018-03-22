@@ -20,7 +20,7 @@ for (var i = 0; i < 21; i++) {
   console.log("Love me, pet me! HSSSSSS!");
 }
 
-// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+// For every EVEN number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 let phrase = [
   "...human...why you taking pictures of me?...",
@@ -31,8 +31,10 @@ let phrase = [
 // let a = Math.floor(Math.random()*(phrase.length-1));
 
 for (var i = 0; i < 21; i++) {
-  let a = Math.floor(Math.random()*(phrase.length));
-  console.log(phrase[a]);
+  if (i % 2 == 0) {
+    let a = Math.floor(Math.random()*(phrase.length));
+    console.log(i + " " +phrase[a]);
+  }
 }
 
 // FIZZBUZZ
@@ -161,3 +163,25 @@ thomsCloset[2][0]
 console.log("Outfit One for Thom is " + outfitOne.toString());
 console.log("Outfit Two for Thom is " + outfitTwo.toString());
 console.log("Outfit Three for Thom is " + outfitThree.toString());
+
+
+// // Dirty Laundry
+// // Continue looking at the closet arrays:
+//
+// Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+// Inventory
+
+for (var i = 0; i < kristynsCloset.length; i++) {
+  console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+// Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+
+const shirts = thomsCloset[0].toString();
+console.log("I have the following shirts: " + shirts);
+
+const pants = thomsCloset[1].toString();
+console.log("I have the following pants: " + pants);
+
+const accessories = thomsCloset[2].toString();
+console.log("I have the following accessories: " + accessories);
