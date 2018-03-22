@@ -78,3 +78,12 @@ console.log(matt[2]);
 // Remove "Pittsburgh" from Kristyn's array and add "Brooklyn".
 kristyn[2] = "Brooklyn";
 console.log(kristyn[2]);
+
+
+// Yell at the Ninja Turtles
+
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (var i = 0; i < ninjaTurtles.length; i++) {
+  console.log(ninjaTurtles[i].toUpperCase());
+}
